@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecuaciones Lineales</title>
+    <link rel="stylesheet" href="Inicio_stayle.css">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsuxBuTregpKcUbOGs-SaZzmidLkNOhLOTwQ&s">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src="Inicio_script.js"></script>
+    <div class="background-circles">
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+    </div>
+
+    <main class="glass-card">
+        <header>
+            <h1>Ecuaciones Lineales</h1>
+            <p>Domina el álgebra con estilo</p>
+        </header>
+
+        <section class="theory-section">
+            <h3>¿Qué es una ecuación lineal?</h3>
+            <p>Es una igualdad matemática que involucra una o más variables a la primera potencia. Su forma básica es:</p>
+            <div class="formula">ax + b = c</div>
+        </section>
+
+        <hr>
+
+        <section class="exercise-container">
+            <h3>Reto Interactivo</h3>
+            <div id="exercise-display">
+                <p>Presiona el botón para generar un desafío</p>
+            </div>
+            
+            <div class="input-group">
+                <input type="number" id="user-answer" placeholder="Valor de x">
+                <button onclick="checkAnswer()" class="btn-check">Comprobar</button>
+            </div>
+            
+            <button onclick="generateExercise()" class="btn-next">Nuevo Ejercicio</button>
+            <div id="feedback"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
